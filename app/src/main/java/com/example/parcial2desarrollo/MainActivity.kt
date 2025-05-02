@@ -23,9 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Parcial2DesarrolloTheme {
                 val productoViewModel: ProductoViewModel = viewModel()
-                Scaffold(modifier = Modifier.fillMaxSize()) {
-                    Navegacion(viewModel = productoViewModel)
-                }
+                Navegacion(viewModel = productoViewModel)
             }
         }
     }

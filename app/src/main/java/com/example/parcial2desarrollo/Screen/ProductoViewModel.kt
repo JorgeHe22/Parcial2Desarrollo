@@ -26,4 +26,8 @@ class ProductoViewModel : ViewModel() {
     fun vaciarCarrito() {
         carrito.clear()
     }
+    fun eliminarProducto(producto: Producto) {
+        productos.remove(producto)
+    }
+
 }
